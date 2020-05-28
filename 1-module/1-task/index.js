@@ -4,7 +4,5 @@
  * @returns {number}
  */
 function factorial(n) {
-  for (var fact = 1; n > 1; fact *= n, n--) ;
-
-  return fact;
+  return n < 1 ? 1 : n * factorial(n - 1);
 }
